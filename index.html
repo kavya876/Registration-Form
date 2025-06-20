@@ -10,53 +10,75 @@
     <h1>Course Registration Form</h1>
 
     <form>
-
+        <!-- Personal Details -->
         <fieldset>
             <legend>Personal Details</legend>
             <table>
                 <tr>
                     <td><label for="fname">First Name</label></td>
-                    <td><input type="text" id="fname" name="fname" size="15" maxlength="10" placeholder="Ex.Kavya" required><p>Enter your name</p>
+                    <td>
+                        <input type="text" id="fname" name="fname" size="15" maxlength="10" placeholder="Ex.Kavya" required>
+                        <p>Enter your name</p>
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="sname">Surname</label> </td>
-                    <td><input type="text" id="sname" name="sname" placeholder="EX.Gunapati" optional><p>Enter your surname</p></td>
+                    <td><label for="sname">Surname</label></td>
+                    <td>
+                        <input type="text" id="sname" name="sname" placeholder="EX.Gunapati">
+                        <p>Enter your surname</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td><label for="mobile">Mobile number</label></td> <!-- ✅ Fixed -->
-                    <td><input type="tel" id="mobile" name="mobile" required><p>Enter your mobile number</p>
-                    <img src="./check-mark.png" height="35" id="correct" width="35">
-                    <img src="./circle.png" height="30" id="wrong" width="30">
-                </td>
+                    <td><label for="mobile">Mobile number</label></td>
+                    <td>
+                        <input type="tel" id="mobile" name="mobile" placeholder="4834252198" required>
+                        <p>Enter your mobile number</p>
+                        <img src="./check-mark.png" height="35" id="correct" width="35">
+                        <img src="./circle.png" height="30" id="wrong" width="30">
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="email">Email</label></td>
-                    <td><input type="email" id="email" name="email" required><p>Enter your email</p>
-                    <img src="./check-mark.png" height="35" id="correct" width="35">
-                    <img src="./circle.png" height="30" id="wrong" width="30"></td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="kavya@gmail.com" required>
+                        <p>Enter your email</p>
+                        <img src="./check-mark.png" height="35" id="correct" width="35">
+                        <img src="./circle.png" height="30" id="wrong" width="30">
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="password">Password</label></td>
-                    <td><input type="password" id="password" name="password" placeholder="Min 8 characters" required><p>Enter your password</p>
-                    <img src="./check-mark.png" height="35" id="correct" width="35">
-                    <img src="./circle.png" height="30" id="wrong" width="30"></td>
+                    <td>
+                        <input type="password" id="password" name="password" placeholder="Min 8 characters" required>
+                        <p>Enter your password</p>
+                        <img src="./check-mark.png" height="35" id="correct" width="35">
+                        <img src="./circle.png" height="30" id="wrong" width="30">
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="confirmpassword">Confirm Password</label></td>
-                    <td><input type="password" id="confirmpassword" name="confirmpassword" placeholder="Min 8 characters" required><p>Enter confirm password</p>
-                    <img src="./check-mark.png" height="35" id="correct" width="35">
-                    <img src="./circle.png" height="30" id="wrong" width="30"></td>
+                    <td>
+                        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Min 8 characters" required>
+                        <p>Enter confirm password</p>
+                        <img src="./check-mark.png" height="35" id="correct" width="35">
+                        <img src="./circle.png" height="30" id="wrong" width="30">
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="dob">DOB</label></td>
-                    <td><input type="date" id="dob" name="dob" required><p>Select your Date of Birth</p></td>
+                    <td>
+                        <input type="date" id="dob" name="dob" required>
+                        <p>Select your Date of Birth</p>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="age">AGE</label></td>
-                    <td><input type="number" id="age" name="age" min="18" max="100" required><p>Select your age</p>
-                    <img src="./check-mark.png" height="35" id="correct" width="35">
-                    <img src="./circle.png" height="30" id="wrong" width="30"></td>
+                    <td>
+                        <input type="number" id="age" name="age" min="18" max="100" required>
+                        <p>Select your age</p>
+                        <img src="./check-mark.png" height="35" id="correct" width="35">
+                        <img src="./circle.png" height="30" id="wrong" width="30">
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Gender</label></td>
@@ -72,7 +94,7 @@
                 <tr>
                     <td><label for="country">Select Country</label></td>
                     <td>
-                        <select id="country" name="Country" required> <!-- ✅ Fixed -->
+                        <select id="country" name="Country" required>
                             <option value="India">INDIA</option>
                             <option value="USA">USA</option>
                             <option value="China">China</option>
@@ -80,8 +102,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><label for="picture">Upload Picture</label></td>
-                    <td><input type="file" id="picture" name="picture"></td>
+                    <td><label for="picture">Upload Resume</label></td>
+                    <td><input type="file" id="picture" name="picture" required></td>
                 </tr>
             </table>
             <input type="reset" value="Reset">
@@ -94,7 +116,7 @@
             <legend>Course Details</legend>
 
             <label for="course">Select Course</label><br>
-            <select id="course" name="Course" required> <!-- ✅ Fixed -->
+            <select id="course" name="Course" required>
                 <option value="python_fs">Python Full Stack</option>
                 <option value="java_fs">Java Full Stack</option>
                 <option value="core_java">Core Java</option>
@@ -118,7 +140,8 @@
 
         </fieldset>
         <br>
-        <input type="submit" value="Submit">
+        <button type="button" onclick="window.location.href='https://thetapacademy.com/';">Submit</button>
+
 
     </form>
 
